@@ -1,0 +1,39 @@
+.button,
+input.button,
+button.button{
+  position: relative;
+  display: inline-block;
+  border: none;
+  outline: none;
+  background: #fff;
+  border-radius: 25px;
+  line-height: 52px;
+  text-align: center;
+  color: #000;
+  transition: background-color 0.2s, color 0.2s;
+
+  //colors
+  &--pink{
+    background: #fba0c6;
+    color: #fff;
+    &:hover{
+      background: #f197bc;
+    }
+  }
+
+  //mods
+  &--auth{
+    width: 195px;
+  }
+
+  &--timer-registration{
+    width: 195px;
+  }
+
+  &--connect{
+    position: absolute;
+    bottom: -17px;
+    left: 85px;
+    width: 195px;
+  }
+}

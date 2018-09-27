@@ -1,3 +1,235 @@
 @import "mixins";
 @import "reset";
+@import "buttons";
 
+body{
+  font: normal 15px 'Open Sans', sans-serif;
+  color: #001d4f;
+}
+
+.full-section{
+  position: relative;
+  width: 100%;
+  &--main{
+    min-height: 802px;
+    background: url("/img/main-section-bg.png") top center no-repeat;
+    padding-top: 30px;
+  }
+  &--speakers{
+
+  }
+}
+
+.container{
+  position: relative;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.main-header{
+  width: 100%;
+  height: 52px;
+  background: #fff;
+  border-radius: 25px;
+  text-align: right;
+  margin-bottom: 65px;
+  &__auth{
+    display: inline-block;
+    vertical-align: top;
+    line-height: 52px;
+  }
+}
+
+.logo{
+  position: relative;
+  float: left;
+  top: 7px;
+  margin-left: 17px;
+}
+
+.menu{
+  display: inline-block;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  &__item{
+    padding: 0;
+    margin: 0 40px 0 0;
+    display: inline-block;
+    vertical-align: top;
+    list-style: none;
+  }
+  &__link{
+    display: inline-block;
+    vertical-align: top;
+    line-height: 52px;
+    transition: color 0.2s;
+    &:hover{
+      color: #fba0c6;
+    }
+  }
+}
+
+.event-info{
+  position: relative;
+
+  &__date{
+    background: url("/img/logo-big.png") left top no-repeat;
+    padding: 20px 0 20px 450px;
+    color: #e93887;
+    font-size: 47px;
+    font-weight: bold;
+  }
+  &__description{
+    color: #172e56;
+    font-weight: 600;
+    font-size: 23px;
+    margin-bottom: 0;
+    padding-bottom: 55px;
+  }
+}
+
+.title{
+  position: relative;
+  display: block;
+  text-align: center;
+  padding-bottom: 22px;
+  font-weight: 600;
+  margin: 0;
+  &--main{
+    font-size: 47px;
+    font-weight: bold;
+    color: #000;
+    padding-bottom: 5px;
+    text-align: left;
+  }
+  &--normal{
+    font-weight: normal;
+  }
+
+  &--line{
+    margin-bottom: 25px;
+    &:after{
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      margin-left: -35px;
+      width: 70px;
+      height: 7px;
+      background: #fba0c6;
+      display: block;
+      border-radius: 10px;
+    }
+  }
+}
+
+.under-title-info{
+  text-align: center;
+  display: block;
+  margin: 0 0 25px 0;
+}
+
+.timer-block{
+  position: relative;
+  width: 577px;
+  height: 165px;
+  background: rgba(255, 255, 255, 0.36);
+  border-radius: 11px;
+  border: 1px solid #fff;
+  margin-bottom: 70px;
+  padding: 10px 50px 20px 50px;
+  &__title{
+    display: block;
+    text-align: center;
+    font-size: 26px;
+    color: #e93887;
+    font-weight: 600;
+    margin-bottom: 14px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #fff;
+  }
+}
+
+.advantages{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 110px;
+  &__item{
+    width: 277px;
+    height: 250px;
+    background: #fff;
+    box-shadow: 0 5px 8px 1px rgba(0, 0, 0, 0.17);
+    border-radius: 11px;
+    padding: 0 20px 0 20px;
+  }
+  &__value{
+    color: #fba0c6;
+    font-size: 49px;
+    font-weight: 600;
+    display: block;
+    line-height: 100px;
+    background: url("/img/heart.png") center no-repeat;
+    border-bottom: 1px solid #d4d9e1;
+    margin-bottom: 25px;
+  }
+  &__title{
+    font-size: 23px;
+    font-weight: 600;
+    display: block;
+    line-height: 29px;
+    padding-bottom: 15px;
+  }
+  &__description{
+    font-size: 14px;
+  }
+}
+
+.speaker{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  &__image{
+    position: relative;
+    margin-left: -170px;
+    margin-right: -95px;
+  }
+
+  &__info{
+    position: relative;
+    width: 761px;
+    height: 441px;
+    background: url("/img/speaker-info.png") no-repeat;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    padding: 35px 45px 0 80px;
+  }
+
+  &__title{
+    margin: 30px 0 35px 0;
+  }
+}
+
+.certificates{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+  &__item{
+    width: 260px;
+    height: 245px;
+    background: url("/img/certtificate-border.png") top left no-repeat;
+    padding: 13px 0 0 15px;
+  }
+  &__thumb{
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0 5px 8px 1px rgba(0, 0, 0, 0.17);
+  }
+}
+
+.bold{
+  font-weight: 600;
+}
